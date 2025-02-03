@@ -1,4 +1,4 @@
-// Find the second largest element in an array.
+// Fetching Second largest element in an array.
 
 	public static int secMax(int[] arr) {
 		if (arr.length < 2)
@@ -33,7 +33,7 @@
 		}
 	}
 
-// Move all zeros to the end of an array while maintaining the order of non-zero elements.
+// Moveing all zeros to the end of an array while maintaining the ascending order of non-zero elements.
 
 	public static int[] reArrange(int arr[]) {
 		int index = 0;
@@ -56,4 +56,32 @@
 			arr[index++] = 0;
 		}
 		return arr;
+	}
+
+// Left Rotation an array by k positions.
+
+	public static int[] leftRotation(int[] arr, int k) {
+		int res[] = new int[arr.length];
+		int m = 0;
+		for (int i = k; i < arr.length; i++) {
+			res[m++] = arr[i];
+		}
+		for (int i = 0; i < k; i++) {
+			res[m++] = arr[i];
+		}
+		return res;
+	}
+
+// Right Rotation an array by k positions.
+
+	public static int[] rightRotation(int[] arr, int k) {
+		int res[] = new int[arr.length];
+		int m = 0;
+		for (int i = arr.length - k; i < arr.length; i++) {
+			res[m++] = arr[i];
+		}
+		for (int i = 0; i < arr.length - k; i++) {
+			res[m++] = arr[i];
+		}
+		return res;
 	}
