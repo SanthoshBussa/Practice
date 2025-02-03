@@ -33,6 +33,7 @@
 		}
 	}
 
+
 // Moveing all zeros to the end of an array while maintaining the ascending order of non-zero elements.
 
 	public static int[] reArrange(int arr[]) {
@@ -58,6 +59,7 @@
 		return arr;
 	}
 
+
 // Left Rotation an array by k positions.
 
 	public static int[] leftRotation(int[] arr, int k) {
@@ -72,6 +74,7 @@
 		return res;
 	}
 
+
 // Right Rotation an array by k positions.
 
 	public static int[] rightRotation(int[] arr, int k) {
@@ -85,6 +88,7 @@
 		}
 		return res;
 	}
+
 
 // Finding the missing number in an array of size n containing numbers from 1 to n.
 
