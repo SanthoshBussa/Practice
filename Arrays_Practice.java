@@ -1,3 +1,47 @@
+// find whether element x is present in the given array. Return the index of the first occurrence of x in the array, or -1 if it doesn't exist.
+	
+	class Solution {
+	    static int search(int arr[], int x) {
+	        int res=0;
+	        if(arr.length<1 ) res=-1;
+	        for(int i=0; i<arr.length; i++){
+	            if(arr[i]==x) {
+	                res=i;
+	                break;
+	            }else res=-1;
+	        }
+	        return res;
+	    }
+	}
+
+
+// find the minimum and maximum elements in the array. Returning a Pair that contains two elements the first one will be a minimum element and the second will be a maximum.
+
+	class Pair<K, V> {
+	    private final K key;
+	    private final V value;
+	
+	    public Pair(K key, V value) {
+	        this.key = key;
+	        this.value = value;
+	    }
+	    public K getKey() { return key; }
+	    public V getValue() { return value; }
+	}
+	
+	class Solution {
+	    public Pair<Integer, Integer> getMinMax(int[] arr) {
+	        int min=arr[0];
+	        int max=arr[0];
+	        for(int i : arr){
+	           if(i<min) min=i;
+	           if(i>max) max=i;
+	        }
+	        return new Pair<>(min, max);
+	    }
+	}
+
+
 // Fetching Second largest element in an array.
 
 	public static int secMax(int[] arr) {
