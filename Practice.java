@@ -85,3 +85,14 @@
 		}
 		return res;
 	}
+// Finding the missing number in an array of size n containing numbers from 1 to n.
+
+	public static int missingLetter(int arr[]) {
+		int n = arr[arr.length - 1];
+		int expectedSum = n * (n + 1) / 2;
+		int sum = 0;
+		for (int i : arr) {
+			sum = sum + i;
+		}
+		return expectedSum - sum;
+	}
