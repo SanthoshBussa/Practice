@@ -85,6 +85,7 @@
 		}
 		return res;
 	}
+
 // Finding the missing number in an array of size n containing numbers from 1 to n.
 
 	public static int missingLetter(int arr[]) {
