@@ -10,3 +10,17 @@
 		else
 			return false;
 	}
+
+
+//	Reverse words in a given string.
+	
+	public static String reverse(String str) {
+		String[] words = str.split(" ");
+		String res="";
+		for(int i=words.length-1; i>=0; i--) {
+			res+=words[i]+" ";
+		}
+		return res;
+	}
+
+
